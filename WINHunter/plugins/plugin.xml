@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<PLUGINS>
+   <PLUGIN>
+      <TYPE>PROPERTYVALUES</TYPE>
+      <OBJECT_NAME>PropertyValues</OBJECT_NAME>
+      <CLASS_NAME>clsPropertyValues</CLASS_NAME>
+   </PLUGIN>
+   <PLUGIN>
+      <TYPE>PROCESSORS</TYPE>
+      <OBJECT_NAME>Processors</OBJECT_NAME>
+      <CLASS_NAME>clsProcessors</CLASS_NAME>
+   </PLUGIN>
+   <PLUGIN>
+      <TYPE>DRAWINGS</TYPE>
+      <OBJECT_NAME>Drawings</OBJECT_NAME>
+      <CLASS_NAME>clsDrawings</CLASS_NAME>
+   </PLUGIN>
+   <PLUGIN>
+      <TYPE>SELECTIONS</TYPE>
+      <OBJECT_NAME>Selections</OBJECT_NAME>
+      <CLASS_NAME>clsSelections</CLASS_NAME>
+   </PLUGIN>
+   <PLUGIN>
+      <TYPE>TRIGGERS</TYPE>
+      <OBJECT_NAME>Triggers</OBJECT_NAME>
+      <CLASS_NAME>clsTriggers</CLASS_NAME>
+   </PLUGIN>
+</PLUGINS>
+

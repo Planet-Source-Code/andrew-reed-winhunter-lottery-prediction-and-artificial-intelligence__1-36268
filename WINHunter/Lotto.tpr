@@ -1,0 +1,82 @@
+[VBProjectCode]
+Type=Exe
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#..\WINDOWS\SYSTEM\stdole2.tlb#OLE Automation
+Reference=*\G{420B2830-E718-11CF-893D-00A0C9054228}#1.0#0#..\WINDOWS\SYSTEM\SCRRUN.DLL#Microsoft Scripting Runtime
+Reference=*\G{98FF7F55-8193-4782-8039-220378A178A7}#3.0#0#PLUGINS\DRAWINGS.DLL#Drawings
+Reference=*\G{562AE1EC-0C72-44EF-949C-FB6409B1B126}#2.0#0#PLUGINS\FILTER.DLL#Filter
+Reference=*\G{6B11592A-1A4F-49EE-B8B3-C0513A5D983E}#5.0#0#PLUGINS\PROCESSORS.DLL#Processors
+Reference=*\G{7226DE63-A98E-406E-B712-321FD13224EC}#5.0#0#PLUGINS\PROPERTYVALUES.DLL#PropertyValues
+Reference=*\G{0C379793-BACF-4CB1-9A98-61A1B2D05723}#2.0#0#PLUGINS\SELECTIONS.DLL#Selections
+Reference=*\G{722C8651-A42D-4F8F-B431-7E900F139244}#5.0#0#PLUGINS\TRIGGERS.DLL#Triggers
+Reference=*\G{71D5159E-7A30-41DB-8498-03B8D4EC0D99}#8.0#0#PLUGINS\STACKS.DLL#Stacks
+Reference=*\G{32D00B97-CB22-45D4-A0C7-9550C605B4D7}#1.0#0#PLUGINS\AI.DLL#AI
+Object={831FDD16-0C5C-11D2-A9FC-0000F8754DA1}#2.0#0; mscomctl.ocx
+Object={3B7C8863-D78F-101B-B9B5-04021C009402}#1.2#0; RICHTX32.OCX
+Object={F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0; comdlg32.ocx
+Object={27395F88-0C0C-101B-A3C9-08002B2F49FB}#1.1#0; PICCLP32.OCX
+Form=frmMain.frm
+Form=frmIndividualPlot.frm
+Class=clsLotto; clsLotto.cls
+Form=frmScan.frm
+Module=modMain; modMain.bas
+Form=frmSplash.frm
+Class=clsHistory; clsHistory.cls
+Class=clsHistories; clsHistories.cls
+Class=clsMachines; clsMachines.cls
+Class=clsMachine; clsMachine.cls
+UserControl=DynData.ctl
+Form=frmViewSettings.frm
+Class=clsWindowCollection; clsWindowCollection.cls
+Form=frmPickFrom.frm
+Class=clsIndexer; clsIndexer.cls
+Form=frmViewOutput.frm
+Form=frmFilterOptimizer.frm
+UserControl=Counter.ctl
+UserControl=LED.ctl
+UserControl=GraphLite.ctl
+Form=frmAbout.frm
+Module=modUtility; modUtility.bas
+Class=CGoXML; Shared\CGoXML.cls
+Form=frmMonitorAI.frm
+ResFile32="fCounter.RES"
+IconForm="frmMain"
+Startup="frmMain"
+HelpFile=""
+Title="WINHunter"
+ExeName32="WINHunter.exe"
+Command32=""
+Name="prjLotto"
+HelpContextID="0"
+CompatibleMode="0"
+MajorVer=0
+MinorVer=1
+RevisionVer=23
+AutoIncrementVer=1
+ServerSupportFiles=0
+VersionComments="Visit winhunter.freeservers.com      You should have received a copy of the GNU General Public License along with this program; if not
+write to the Free Software Foundation
+Inc.
+59 Temple Place
+Suite 330
+Boston
+MA 02111-1307 USA"
+VersionCompanyName="Andrew Reed"
+VersionFileDescription="Lottery Prediction based on Statistical Analysis and Stacked Filtering Methods"
+VersionLegalCopyright="CopyRight (C) Andrew Reed"
+VersionLegalTrademarks="OSI Certified Open Source"
+VersionProductName="WIN Hunter |)->"
+CompilationType=0
+OptimizationType=0
+FavorPentiumPro(tm)=0
+CodeViewDebugInfo=0
+NoAliasing=0
+BoundsCheck=0
+OverflowCheck=0
+FlPointCheck=0
+FDIVCheck=0
+UnroundedFP=0
+StartMode=0
+Unattended=0
+Retained=0
+ThreadPerObject=0
+MaxNumberOfThreads=1

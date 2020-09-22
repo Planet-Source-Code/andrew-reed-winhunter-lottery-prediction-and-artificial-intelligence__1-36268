@@ -1,0 +1,78 @@
+Here is a list of .dll files that will need to be compiled,
+their required location,
+the order in which they need to be compiled,
+and the dependency upon each file.
+
+
+Compile all of the following projects in order.  Once you compile a project, place the .dll in the Required location.  From there, register the .dll by cut/pasting the .dll from the Required location and paste it onto the Regsvr32.exe in the windows system directory.  Be sure to check the REFERENCES for each project to make sure they reference the .dll file it is dependant upon
+
+
+
+Compile all projects in this order:
+
+
+
+ProjectName:		Drawings.vbp
+LibraryName:		Drawings.dll
+Dependency:		Library is linked via Late Binding
+Required Location:	WINHunter/plugins
+
+ProjectName:		GoXML.vbp
+LibraryName:		GoXML.dll
+Dependency:		Library is linked via Early Binding
+			Processors.vbp (Processors.dll)
+			Triggers.vbp (Triggers.dll)
+			Selections.vbp (Selections.dll)
+			Stacks.vbp (Stacks.dll)
+			AI.vbp (AI.dll)
+			Filter.vbp (Filter.dll)
+			Lotto.vbp(WINHunter.exe, main program)
+Required Location:	WINHunter/plugins/Shared
+
+
+ProjectName:		Processors.vbp
+LibraryName:		Processors.dll
+Dependency:		Library is linked via Late Binding
+Required Location:	WINHunter/plugins
+
+ProjectName:		Triggers.vbp
+LibraryName:		Triggers.dll
+Dependency:		Library is linked via Late Binding
+Required Location:	WINHunter/plugins
+
+ProjectName:		Selections.vbp
+LibraryName:		Selections.dll
+Dependency:		Library is linked via Late Binding
+Required Location:	WINHunter/plugins
+
+ProjectName:		PropertyValues.vbp
+LibraryName:		PropertyValues.dll
+Dependency:		Library is linked via Late Binding
+Required Location:	WINHunter/plugins
+
+
+
+
+
+ProjectName:		Filter.vbp
+LibraryName:		Filter.dll
+Dependency:		Library is linked via Early Binding
+			Stacks.vbp (Stacks.dll)
+			AI.vbp (AI.dll)
+			Lotto.vbp(WINHunter.exe, main program)
+Required Location:	WINHunter/plugins/Shared
+
+
+ProjectName:		Stacks.vbp
+LibraryName:		Stacks.dll
+Dependency:		Library is linked via Early Binding
+			AI.vbp (AI.dll)
+			Lotto.vbp(WINHunter.exe, main program)
+Required Location:	WINHunter/plugins/Shared
+
+
+ProjectName:		AI.vbp
+LibraryName:		AI.dll
+Dependency:		Library is linked via Early Binding
+			Lotto.vbp(WINHunter.exe, main program)
+Required Location:	WINHunter/plugins/Shared

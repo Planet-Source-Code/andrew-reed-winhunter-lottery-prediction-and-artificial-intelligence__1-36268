@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+<STACK>
+   <INITIAL_HISTORY_FILE>C:\WINHunter\history\FLLotto.txt</INITIAL_HISTORY_FILE>
+
+   <GROUPS>
+      <GROUP usegroup="-1">
+         <GROUP_NAME>
+         </GROUP_NAME>
+
+         <FILTERS>
+            <FILTER usefilter="-1">
+               <FILTER_NAME>
+               </FILTER_NAME>
+
+               <PROPERTIES>
+                  <PROPERTY keyname="use">15</PROPERTY>
+
+                  <PROPERTY keyname="skip">0</PROPERTY>
+
+                  <PROPERTY keyname="oncycle">2</PROPERTY>
+
+                  <PROPERTY keyname="offcycle">1</PROPERTY>
+
+                  <PROPERTY keyname="startcycle">-1</PROPERTY>
+               </PROPERTIES>
+
+               <PROCESSORS>
+                  <PROCESSOR useprocessor="-1" keyname="positiongap">
+                     <PROCESSOR_NAME>PositionGap</PROCESSOR_NAME>
+
+                     <PROPERTIES>
+                        <PROPERTY keyname="gapweight">1</PROPERTY>
+
+                        <PROPERTY keyname="maximumgap">15</PROPERTY>
+                     </PROPERTIES>
+                  </PROCESSOR>
+
+                  <PROCESSOR useprocessor="-1" keyname="previousdwgs">
+                     <PROCESSOR_NAME>PreviousDwgs</PROCESSOR_NAME>
+
+                     <PROPERTIES>
+                        <PROPERTY keyname="prevdwgtestvalue">2</PROPERTY>
+
+                        <PROPERTY keyname="prevdwgweight">1</PROPERTY>
+                     </PROPERTIES>
+                  </PROCESSOR>
+
+                  <PROCESSOR useprocessor="-1" keyname="compoundhit">
+                     <PROCESSOR_NAME>CompoundHit</PROCESSOR_NAME>
+
+                     <PROPERTIES>
+                        <PROPERTY keyname="overdueweight">1</PROPERTY>
+
+                        <PROPERTY keyname="notrecentweight">1</PROPERTY>
+
+                        <PROPERTY keyname="hitspan">3</PROPERTY>
+
+                        <PROPERTY keyname="repeatabilityweight">0</PROPERTY>
+
+                        <PROPERTY keyname="undertotalrepeats">1</PROPERTY>
+
+                        <PROPERTY keyname="undermaxrepeatsweight">0</PROPERTY>
+                     </PROPERTIES>
+                  </PROCESSOR>
+               </PROCESSORS>
+            </FILTER>
+
+            <FILTER usefilter="-1">
+               <FILTER_NAME>
+               </FILTER_NAME>
+
+               <PROPERTIES>
+                  <PROPERTY keyname="use">35</PROPERTY>
+
+                  <PROPERTY keyname="skip">0</PROPERTY>
+
+                  <PROPERTY keyname="oncycle">2</PROPERTY>
+
+                  <PROPERTY keyname="offcycle">3</PROPERTY>
+
+                  <PROPERTY keyname="startcycle">0</PROPERTY>
+               </PROPERTIES>
+
+               <PROCESSORS>
+                  <PROCESSOR useprocessor="-1" keyname="positiongap">
+                     <PROCESSOR_NAME>PositionGap</PROCESSOR_NAME>
+
+                     <PROPERTIES>
+                        <PROPERTY keyname="gapweight">1</PROPERTY>
+
+                        <PROPERTY keyname="maximumgap">15</PROPERTY>
+                     </PROPERTIES>
+                  </PROCESSOR>
+
+                  <PROCESSOR useprocessor="-1" keyname="compoundhit">
+                     <PROCESSOR_NAME>CompoundHit</PROCESSOR_NAME>
+
+                     <PROPERTIES>
+                        <PROPERTY keyname="overdueweight">1</PROPERTY>
+
+                        <PROPERTY keyname="notrecentweight">1</PROPERTY>
+
+                        <PROPERTY keyname="hitspan">2</PROPERTY>
+
+                        <PROPERTY keyname="repeatabilityweight">0</PROPERTY>
+
+                        <PROPERTY keyname="undertotalrepeats">1</PROPERTY>
+
+                        <PROPERTY keyname="undermaxrepeatsweight">0</PROPERTY>
+                     </PROPERTIES>
+                  </PROCESSOR>
+               </PROCESSORS>
+            </FILTER>
+         </FILTERS>
+
+         <SELECTOR keyname="highavglow">
+            <SELECTOR_NAME>High/Avg/Low (Inversions)</SELECTOR_NAME>
+
+            <PROPERTIES>
+               <PROPERTY keyname="selector">1</PROPERTY>
+
+               <PROPERTY keyname="type">0</PROPERTY>
+
+               <PROPERTY keyname="selectmin">40</PROPERTY>
+            </PROPERTIES>
+         </SELECTOR>
+      </GROUP>
+
+      <GROUP usegroup="-1">
+         <GROUP_NAME>
+         </GROUP_NAME>
+         <FILTERS>
+            <FILTER usefilter="-1">
+               <FILTER_NAME>
+               </FILTER_NAME>
+
+               <PROPERTIES>
+                  <PROPERTY keyname="use">50</PROPERTY>
+
+                  <PROPERTY keyname="skip">1</PROPERTY>
+
+                  <PROPERTY keyname="oncycle">0</PROPERTY>
+
+                  <PROPERTY keyname="offcycle">0</PROPERTY>
+
+                  <PROPERTY keyname="startcycle">0</PROPERTY>
+               </PROPERTIES>
+
+               <PROCESSORS>
+                  <PROCESSOR useprocessor="-1" keyname="pairhit">
+                     <PROCESSOR_NAME>PairHit</PROCESSOR_NAME>
+
+                     <PROPERTIES>
+                        <PROPERTY keyname="pairlowweight">1</PROPERTY>
+
+                        <PROPERTY keyname="pairaverageweight">2</PROPERTY>
+
+                        <PROPERTY keyname="pairhighweight">3</PROPERTY>
+                     </PROPERTIES>
+                  </PROCESSOR>
+               </PROCESSORS>
+            </FILTER>
+         </FILTERS>
+
+         <SELECTOR keyname="highavglow">
+            <SELECTOR_NAME>High/Avg/Low (Inversions)</SELECTOR_NAME>
+
+            <PROPERTIES>
+               <PROPERTY keyname="selector">1</PROPERTY>
+
+               <PROPERTY keyname="type">0</PROPERTY>
+
+               <PROPERTY keyname="selectmin">20</PROPERTY>
+            </PROPERTIES>
+         </SELECTOR>
+      </GROUP>
+
+      <GROUP usegroup="-1">
+
+         <GROUP_NAME>
+         </GROUP_NAME>
+         <FILTERS>
+            <FILTER usefilter="-1">
+               <FILTER_NAME>
+               </FILTER_NAME>
+
+               <PROPERTIES>
+                  <PROPERTY keyname="use">40</PROPERTY>
+
+                  <PROPERTY keyname="skip">0</PROPERTY>
+
+                  <PROPERTY keyname="oncycle">0</PROPERTY>
+
+                  <PROPERTY keyname="offcycle">0</PROPERTY>
+
+                  <PROPERTY keyname="startcycle">0</PROPERTY>
+               </PROPERTIES>
+
+               <PROCESSORS>
+                  <PROCESSOR useprocessor="-1" keyname="compoundhit">
+                     <PROCESSOR_NAME>CompoundHit</PROCESSOR_NAME>
+
+                     <PROPERTIES>
+                        <PROPERTY keyname="overdueweight">0</PROPERTY>
+
+                        <PROPERTY keyname="notrecentweight">0</PROPERTY>
+
+                        <PROPERTY keyname="hitspan">3</PROPERTY>
+
+                        <PROPERTY keyname="repeatabilityweight">1</PROPERTY>
+
+                        <PROPERTY keyname="undertotalrepeats">1</PROPERTY>
+
+                        <PROPERTY keyname="undermaxrepeatsweight">1</PROPERTY>
+                     </PROPERTIES>
+                  </PROCESSOR>
+
+                  <PROCESSOR useprocessor="-1" keyname="singlehit">
+                     <PROCESSOR_NAME>SingleHit</PROCESSOR_NAME>
+
+                     <PROPERTIES>
+                        <PROPERTY keyname="lowweight">1</PROPERTY>
+
+                        <PROPERTY keyname="averageweight">3</PROPERTY>
+
+                        <PROPERTY keyname="highweight">7</PROPERTY>
+                     </PROPERTIES>
+                  </PROCESSOR>
+               </PROCESSORS>
+            </FILTER>
+         </FILTERS>
+
+         <SELECTOR keyname="highavglow">
+            <SELECTOR_NAME>High/Avg/Low (Inversions)</SELECTOR_NAME>
+
+            <PROPERTIES>
+               <PROPERTY keyname="selector">1</PROPERTY>
+
+               <PROPERTY keyname="type">0</PROPERTY>
+
+               <PROPERTY keyname="selectmin">10</PROPERTY>
+            </PROPERTIES>
+         </SELECTOR>
+      </GROUP>
+   </GROUPS>
+</STACK>
+
